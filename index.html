@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salling Online - Premium Shopping Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><span>Salling</span>Online</a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#account" class="account-btn">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            
+            <div class="row">
+                <div class="col-2">
+                    <h1>Premium Shopping <br> Experience!</h1>
+                    <p>Discover the latest trends and exclusive collections <br> with Salling Online.</p>
+                    <a href="#products" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images\banner.jpg" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt="Category 1">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" alt="Category 2">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" alt="Category 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="small-container" id="products">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg" alt="Product 1">
+                <h4>Premium T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$45.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="Product 2">
+                <h4>Classic Sneakers</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$85.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="Product 3">
+                <h4>Stylish Watch</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>$120.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="Product 4">
+                <h4>Designer Bag</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$95.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img" alt="Exclusive Offer">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on SallingOnline</p>
+                    <h1>Smart Band 4</h1>
+                    <small>The Smart Band 4 features a 39.9% larger (than Smart Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</small><br>
+                    <a href="#" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="small-container">
+            <h2 class="title">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>I absolutely love shopping at SallingOnline! The quality of products is exceptional and the delivery is always on time.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <img src="images/user-1.jpg" alt="User 1">
+                    <h3>Sarah Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Great customer service and easy return policy. I've been a loyal customer for 2 years now and never had any issues.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="images/user-2.jpg" alt="User 2">
+                    <h3>Mike Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The premium collection is worth every penny. I always find unique items that aren't available elsewhere.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <img src="images/user-3.jpg" alt="User 3">
+                    <h3>Emma Johnson</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png" alt="Brand 1">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png" alt="Brand 2">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png" alt="Brand 3">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png" alt="Brand 4">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png" alt="Brand 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="title">About SallingOnline</h2>
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/about.jpg" alt="About Us">
+                </div>
+                <div class="col-2">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2015, SallingOnline started as a small boutique store with a vision to bring premium products to customers worldwide. Today, we've grown into a global e-commerce platform serving millions of satisfied customers.</p>
+                    <p>Our mission is to provide an exceptional shopping experience with carefully curated products, competitive prices, and outstanding customer service.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="title">Contact Us</h2>
+            <div class="row">
+                <div class="col-2">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <div class="contact-info">
+                        <div class="info-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Premium Street, Luxury District, 10000</p>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+1 234 567 8900</p>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@sallingonline.com</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images\play store logo.jpg" alt="Play Store">
+                        <img src="images/app store logo.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="logo">
+                        <a href="index.html"><span>Salling</span>Online</a>
+                    </div>
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Premium Products Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - SallingOnline</p>
+        </div>
+    </footer>
+
+    <!-- Account Modal -->
+    <div class="account-modal" id="account-modal">
+        <div class="account-form-container">
+            <span class="close-btn">&times;</span>
+            <div class="form-btns">
+                <button id="login-btn" class="form-btn active">Login</button>
+                <button id="register-btn" class="form-btn">Register</button>
+            </div>
+
+            <form id="login-form" class="account-form">
+                <h3>Login to Your Account</h3>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+
+            <form id="register-form" class="account-form" style="display: none;">
+                <h3>Create New Account</h3>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="phone number" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
